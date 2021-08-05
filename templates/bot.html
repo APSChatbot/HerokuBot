@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APS Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/983d95cbe2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">APS Bot</div>
+        <div class="form">
+            <div class="bot-inbox inbox">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="msg-header">
+                    <p>Hello! APS Bot here</p>
+                </div>
+            </div>
+        </div>
+        <div class="typing-field">
+            <div class="input-data">
+                <input id="data" name="req" type="text" placeholder="Type something here" required>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            convertLinks = input => {
+                let text = input;
+                const aLink = [];
+                const linksFound = text.match(/(?:www|https?)[^\s]+/g);
+
+                if (linksFound != null) {
+                    for (let i = 0; i < linksFound.length; i++) {
+                        let replace = linksFound[i];
+
+                        if (!(linksFound[i].match(/(http(s?)):\/\//))) {
+                            replace = 'http://' + linksFound[i]
+                        }
+
+                        let linkText = replace.split('/')[2];
+
+                        if (linkText.substring(0, 3) == 'www') {
+                            linkText = linkText.replace('www.', '')
+                        }
+
+                        if (linkText.match(/youtu/)) {
+                            const youtubeID = replace.split('/').slice(-1)[0].split('=')[1];
+
+                            if (youtubeID === undefined || youtubeID === '') {
+                                aLink.push('<a href="' + replace + '" target="_blank">' + linkText + '</a>');
+                            } else {
+                                aLink.push('<span class="video-wrapper"><iframe src="https://www.youtube.com/embed/' + youtubeID + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>');
+                            }
+                        } else {
+                            aLink.push('<a href="' + replace + '" target="_blank">' + linkText + '</a>');
+                        }
+
+                        text = text.split(linksFound[i]).map(item => {
+                            return aLink[i].includes('iframe') ? item.trim() : item
+                        }).join(aLink[i]);
+                    }
+                    return text;
+                }
+                else {
+                    return input;
+                }
+            };
+            var input = document.getElementById("data");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("send-btn").click();
+                }
+            })
+            $("#send-btn").on("click", function () {
+                $value = $("#data").val();
+                $msg = '<div class="user-inbox inbox"><div class="msg-header"><p>' + $value + '</p></div></div>';
+                $(".form").append($msg);
+                $("#data").val('');
+                $.ajax({
+                    url: "/reqdata",
+                    type: 'POST',
+                    data: $value,
+                    success: function (result) {
+                        $replay = convertLinks(result);
+                        $(".form").append($replay);
+                        // when chat goes down the scroll bar automatically comes to the bottom
+                        $(".form").scrollTop($(".form")[0].scrollHeight);
+                    }
+                })
+            });
+        });
+    </script>
+
+</body>
+
+</html>
