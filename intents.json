@@ -479,6 +479,42 @@
         },
         {
             "patterns": [
+                "Covid Protocols",
+                "Covid Prevention",
+                "COVID-19 Rules and Regulation ofr School"
+            ],
+            "responses": [
+                "To Check the Covid Prevention in Schools: https://drive.google.com/file/d/1z0rhkGyBJPe_fjbT_ls3baVGWyOrZLOB/view?usp=sharing"
+            ],
+            "tag": "Covid Prevention"
+        },
+        {
+            "patterns": [
+                "Procedure to create Pdf",
+                "How to make PDF",
+                "PDF Creation",
+                "How to Upload PDF in Google Classroom",
+                "Google Classroom"
+            ],
+            "responses": [
+                "To Check the Procedure to make PDF and to Upload it: https://drive.google.com/file/d/1OX6CkzgYuyVULBkZU8qpoGTEkVKIvMIK/view?usp=sharing"
+            ],
+            "tag": "Procedure to Make PDF and Uploading it"
+        },
+        {
+            "patterns": [
+                "Consent Form",
+                "Consent Letter",
+                "Permission Application",
+                "Consent from Parents"
+            ],
+            "responses": [
+                "Consent Form (To be filled by Parents): https://drive.google.com/file/d/1_7B765q62mivNajaPjgM326y0eZ8kyxs/view?usp=sharing"
+            ],
+            "tag": "Consent Form"
+        },
+        {
+            "patterns": [
                 "What's your gender",
                 "What is your gender",
                 "What's your sex",
