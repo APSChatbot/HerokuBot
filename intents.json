@@ -10,7 +10,9 @@
             ],
             "responses": [
                 "Hello",
-                "Hi there!"
+                "Hi there!",
+                "नमस्ते",
+                "Greetings"
             ],
             "tag": "Greeting"
         },
@@ -22,8 +24,7 @@
                 "school"
             ],
             "responses": [
-                "I'm made for Army Public School, Meerut",
-                "APS, Meerut Cantt"
+                "I work for Army Public School, Meerut"
             ],
             "tag": "School Name"
         },
@@ -32,9 +33,7 @@
                 "how are you"
             ],
             "responses": [
-                "I'm fine. May I help you?",
-                "I'm absolutely fine. May I help you?",
-                "Well, I'm superb!"
+                "I'm fine. May I help you?"
             ],
             "tag": "Fine"
         },
@@ -48,7 +47,7 @@
                 "how to apply for Transfer certificate"
             ],
             "responses": [
-                "For TC, Fill the form given below <br>TC:<br> https://docs.google.com/forms/d/e/1FAIpQLSey1B7iF6QIwRhE2DoZZexT06wIg-8DPBZKOQskZaNpbcdoIw/viewform "
+                "TC:<br> https://apsmeerut.com/notice/tc.pdf "
             ],
             "tag": "TC"
         },
@@ -60,7 +59,7 @@
                 "registration"
             ],
             "responses": [
-                "For Admission, Check this PDF:<br> https://www.apsmeerut.com/notice/Admission%20Notice2.pdf  <break> Check out this PDF for more info:<br> https://drive.google.com/file/d/1DwjqmLjwvMWe3UY8GgWOsoaIV3X1Kjoi/view?usp=sharing "
+                "Check out the Notice Board for Latest updates regarding Admission and Results:<br> https://apsmeerut.com/noticeboard.php "
             ],
             "tag": "Admission"
         },
@@ -84,7 +83,7 @@
                 "How were you made"
             ],
             "responses": [
-                "I was developed in Python."
+                "I was Programmed in Python."
             ],
             "tag": "Languages"
         },
@@ -151,10 +150,13 @@
                 "Where to find NCERT books",
                 "How to download e-books",
                 "How to download pdf of school books",
-                "e-book"
+                "e-book",
+                "NCERT",
+                "Book List",
+                "Books"
             ],
             "responses": [
-                "To download NCERT books:<br>https://ncert.nic.in/textbook.php "
+                "To download NCERT books:<br>https://ncert.nic.in/textbook.php  <break> Book List:<br>https://apsmeerut.com/notice/book%20list_merged.pdf "
             ],
             "tag": "NCERT Books"
         },
@@ -182,10 +184,14 @@
                 "Fees",
                 "can I pay fees online",
                 "which online payment options are supported",
-                "Modes of Payment"
+                "Modes of Payment",
+                "Paytm",
+                "Google Pay",
+                "PhonePe",
+                "Pay"
             ],
             "responses": [
-                "The secure supported modes of Online Payment are <br><strong>1. Apsdigicamp</strong> <break> Detailed PDF for Payment: <br>https://drive.google.com/file/d/1QIRtN31U3c9ynP3mB8e3RdwLPPnTzHrA/view?usp=sharing "
+                "You can use any online payment application to pay the school fees. <break> Check this link to learn about Payment through APSDigicamp: <br>https://drive.google.com/file/d/1QIRtN31U3c9ynP3mB8e3RdwLPPnTzHrA/view?usp=sharing "
             ],
             "tag": "Online Payment"
         },
@@ -196,8 +202,7 @@
             ],
             "responses": [
                 "Good",
-                "Great",
-                "Cool"
+                "Great"
             ],
             "tag": "Yes"
         },
@@ -224,7 +229,7 @@
                 "how do i contact school"
             ],
             "responses": [
-                "Tel: 0121-2970133"
+                "<strong>Primary Wing: 01212970131</strong><br><strong>Senior Wing: 01212970133, 6399126061</strong>"
             ],
             "tag": "Telephone"
         },
@@ -237,7 +242,7 @@
                 "why were you created"
             ],
             "responses": [
-                "I was developed to guide you through the procedure of Admission, TC, queries related Online Payment, how to use Digicamp etc."
+                "I was developed to guide through the procedure of Admission, TC, queries related Online Payment, how to use Digicamp etc."
             ],
             "tag": "Helps"
         },
@@ -251,7 +256,7 @@
                 "APSdigicamp"
             ],
             "responses": [
-                "Digicamp is a school management software for CBSE schools provided by AWES. <break> <strong>Detailed PDF on How to use Digicamp:</strong><br>https://drive.google.com/file/d/1QIRtN31U3c9ynP3mB8e3RdwLPPnTzHrA/view?usp=sharing <br><strong>Admission with Digicamp</strong><br> Detailed PDF for Admission:<br> https://drive.google.com/file/d/1DwjqmLjwvMWe3UY8GgWOsoaIV3X1Kjoi/view?usp=sharing "
+                "Digicamp is a school management software for Army Public Schools. <break> <strong>Detailed PDF on How to use Digicamp:</strong><br>https://drive.google.com/file/d/1QIRtN31U3c9ynP3mB8e3RdwLPPnTzHrA/view?usp=sharing <br><strong>Admission with Digicamp</strong><br> Detailed PDF for Admission:<br> https://drive.google.com/file/d/1DwjqmLjwvMWe3UY8GgWOsoaIV3X1Kjoi/view?usp=sharing "
             ],
             "tag": "Digicamp"
         },
@@ -262,21 +267,9 @@
                 "location"
             ],
             "responses": [
-                "APS Meerut: https://www.apsmeerut.com/?x=16 "
+                "APS Meerut: Cantonment Station Rd, Meerut Cantt, Meerut, Uttar Pradesh 250001 "
             ],
             "tag": "Location"
-        },
-        {
-            "patterns": [
-                "what is the syllaus?",
-                "where can I find the syllaus",
-                "what's the syllabus for class",
-                "syllabus"
-            ],
-            "responses": [
-                "Syllabus: https://www.apsmeerut.com/sb.php "
-            ],
-            "tag": "Syllabus"
         },
         {
             "patterns": [
@@ -295,9 +288,7 @@
                 "name"
             ],
             "responses": [
-                "You can call me <strong>APS Bot</strong>.",
-                "I'm <strong>APS Bot</strong>!",
-                "Just call me <strong>APS Bot</strong>"
+                "I'm <strong>APS Bot</strong>!"
             ],
             "tag": "name"
         },
@@ -311,8 +302,8 @@
             ],
             "responses": [
                 "Tell me, how can I assist you?",
-                "Tell me your problem, to assist you?",
-                "How can i help you out?"
+                "Tell me your problem to assist you?",
+                "How can i help you?"
             ],
             "tag": "help"
         },
@@ -422,7 +413,7 @@
                 "COVID-19 Rules and Regulation ofr School"
             ],
             "responses": [
-                "To Check the Covid Prevention in Schools: https://drive.google.com/file/d/1z0rhkGyBJPe_fjbT_ls3baVGWyOrZLOB/view?usp=sharing"
+                "To Check the Covid Prevention in Schools: https://drive.google.com/file/d/1z0rhkGyBJPe_fjbT_ls3baVGWyOrZLOB/view?usp=sharing "
             ],
             "tag": "Covid Prevention"
         },
