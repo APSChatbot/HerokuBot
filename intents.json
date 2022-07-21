@@ -33,18 +33,18 @@
                 "how are you"
             ],
             "responses": [
-                "I'm fine. May I help you?"
+                "I'm fine. How may I help you?"
             ],
             "tag": "Fine"
         },
         {
             "patterns": [
-                "how to apply for TC",
+                "apply for TC",
                 "TC",
-                "tell me the procedure of TC",
-                "tell me the procedure of Transfer certificate",
+                "procedure of TC",
+                "procedure of Transfer certificate",
                 "Transfer Certificate",
-                "how to apply for Transfer certificate"
+                "apply for Transfer certificate"
             ],
             "responses": [
                 "TC:<br> https://apsmeerut.com/notice/tc.pdf "
@@ -53,8 +53,8 @@
         },
         {
             "patterns": [
-                "tell me the procedure of admission",
-                "how to apply for admission",
+                "procedure of admission",
+                "apply for admission",
                 "admission",
                 "registration"
             ],
@@ -69,7 +69,7 @@
                 "who made you",
                 "who created you",
                 "Whose your creator",
-                "developed"
+                "developer"
             ],
             "responses": [
                 "I was developed by:- <br>Nisha Rastogi<br>Prithviraj Chauhan. "
@@ -110,7 +110,7 @@
                 "Cariappa",
                 "Manekshaw",
                 "Sunderji",
-                "What are the four houses of this school",
+                "four houses of this school",
                 "Describe activity houses of aps meerut",
                 "Can you tell me about houses."
             ],
@@ -121,11 +121,8 @@
         },
         {
             "patterns": [
-                "how can I verify school details",
-                "verification of details",
-                "how do I get my result",
-                "result",
-                "My performance in exams"
+                "verify school details",
+                "verification of details"
             ],
             "responses": [
                 "Check out this link: https://apsdigicamp.com  <break> Detailed PDF on How to use Digicamp:<br>https://drive.google.com/file/d/1QIRtN31U3c9ynP3mB8e3RdwLPPnTzHrA/view?usp=sharing "
@@ -138,7 +135,7 @@
                 "the dont's of APS meerut",
                 "the do's and dont's",
                 "code of conduct",
-                "tell me about code of conduct and discipline"
+                "code of conduct and discipline"
             ],
             "responses": [
                 "<strong>Do's</strong><br>1. Be on time everyday.<br>2. Follow proper dress code-uniform and shoes.<br>3. Be neat and clean.<br>4. Wear school uniform on all Parent-Teacher Meeting days.<br>5. Bring required study material to school.<br>6. Submit your notebook for correction on dates fixed by the teachers.<br>7. During the absence of the teachers from the class, obey the monitor or prefect to maintain good order.<br>8. Maintain exemplary behaviour and show respect for the feelings of others.<br>9. Be humble in your success or victory.<br>10. Be honest, upright and truthful.<br>11. Be co-operative and exhibit team spirit for positive attitude and conduct.<br>12. Be patient, tolerant and secular.<br>13. Take pride in yourself, your school, your parents and your nation.<br>14. Be courteous. Remember \"Thank You\" and \"Please\" are two very good words.<br>15. Be grateful to God for everything you have.<br>16. Believe in yourself and have courage. Remember God is with you always and everywhere. <break> <strong>Don'ts</strong><br>1. Do not be out of the classroom without the outpasses/written permission of the teacher concerned.<br>2. Do not bunk classes.<br>3. Do not speak foul language or scribble anywhere.<br>4. Do not waste water and electricity.<br>5. Do not copy or cheat.<br>6. Don't crowd in the corridors.<br>7. While going for games or others activities, don't move in a group, from a proper line.<br>8. Don't pluck flowers.<br>9. Don't throw garbage on floor. Always use dustbins.<br>10. Do not damage school property.<br>11. Do not look down upon those who are less priviliged, weak or physically challenged.<br>12. Do not hurt by your words or deeds.<br>13. Do not ill-treat animals or birds.<br>14. Do not be arrogant.<br>15. Do not pass racial comments.<br>16. Do not bring crackers, holi colours, walkman, cell phone, cameras, i-pods, MP3 players, laptops and other electronic appliances to the school. If confiscated will not be returned.<br>17. Don't play, run or shout in the corridors. <break> <strong>Forbidden Practices</strong><br>No student will indulge in any of the following practices:<br>1. Violence in any form.<br>2. Sex related offences.<br>3. Rude and disorderly behaviour.<br>4. Smoking<br>5. Use of Drugs or Intoxicants.<br>6. Any form of Gambling.<br>7. Spitting in or near the school building except in any spittoon provided by the school.<br>8. Casteism, communalism and practice of untouchability.<br><strong>(a) No excuses or reasons will be heard for breaking the above mentioned rules.</strong><br><strong>(b) Three Yellow Slips or One Pink Slip is enough to issue a TC.</strong><br><strong>(c) Take your responsibility."
@@ -178,12 +175,11 @@
         },
         {
             "patterns": [
-                "how to pay fees online",
+                "pay fees online",
                 "how to do payment",
                 "How to pay fees",
                 "Fees",
-                "can I pay fees online",
-                "which online payment options are supported",
+                "online payment options are supported",
                 "Modes of Payment",
                 "Paytm",
                 "Google Pay",
@@ -221,12 +217,10 @@
         },
         {
             "patterns": [
-                "telephone of the school?",
+                "telephone of the school",
                 "phone number",
-                "what is the telephone number of the school",
                 "telephone",
-                "telephone number",
-                "how do i contact school"
+                "contact school"
             ],
             "responses": [
                 "<strong>Primary Wing: 01212970131</strong><br><strong>Senior Wing: 01212970133, 6399126061</strong>"
@@ -263,8 +257,9 @@
         {
             "patterns": [
                 "where is the school located",
-                "what is the address of the school",
-                "location"
+                "address of the school",
+                "location",
+                "school address"
             ],
             "responses": [
                 "APS Meerut: Cantonment Station Rd, Meerut Cantt, Meerut, Uttar Pradesh 250001 "
@@ -302,7 +297,6 @@
             ],
             "responses": [
                 "Tell me, how can I assist you?",
-                "Tell me your problem to assist you?",
                 "How can i help you?"
             ],
             "tag": "help"
@@ -340,7 +334,6 @@
         },
         {
             "patterns": [
-                "Tell me the datetime",
                 "What time is it",
                 "What is the time",
                 "Today's day",
